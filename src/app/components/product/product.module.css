@@ -1,0 +1,98 @@
+.mainProductContainer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+}
+
+.mainProductText {
+  font-size: 14px;
+  font-weight: 700;
+  color: #757575;
+}
+
+.mainProductTitle {
+  font-size: 56px;
+  letter-spacing: 0.1px;
+  line-height: 58px;
+}
+
+.mainProductTextVisible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 2s;
+  transition-delay: 1s;
+}
+
+.mainProductTextHidden {
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.mainProductTitle:hover {
+  text-decoration: underline #757575 solid 3px;
+  transition: text-decoration 0.25s ease;
+  cursor: pointer;
+}
+
+.mainProductBrandName {
+  font-weight: 200;
+  color: #252525;
+}
+
+.mainProductDescription {
+  color: #8d8f9a;
+  font-weight: 100;
+}
+
+.mainProductImageVisible {
+  z-index: 1;
+  opacity: 1;
+  cursor: pointer;
+  transform: translateX(0);
+  transition: all 2s;
+  transition-delay: 1s;
+}
+
+.mainProductImageHidden {
+  opacity: 0;
+  z-index: 1;
+  transform: translateX(700px);
+}
+
+.mainProductImageWrapper {
+  transition: transform 0.25s ease;
+}
+
+.mainProductImageWrapper:hover {
+  transform: scale(0.97);
+  transition: transform 0.5s ease;
+}
+
+.decorativeCircleVisible {
+  opacity: 1;
+  position: absolute;
+  top: -30%;
+  right: -50%;
+  width: 105vw;
+  height: 105vw;
+  max-width: 120vh;
+  max-height: 120vh;
+  background-color: #5b77dd;
+  border-radius: 50%;
+  transform: translateX(0);
+  transition: all 2s;
+  transition-delay: 1s;
+}
+
+.decorativeCircleHidden {
+  opacity: 0;
+  transform: translateX(700px);
+}
+
+@media only screen and (max-width: 1530px) {
+  .decorativeCircleVisible {
+    right: -55%;
+  }
+}

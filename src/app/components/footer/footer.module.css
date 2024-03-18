@@ -1,0 +1,32 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 52px 0;
+  border-top: 1px solid #3030301a;
+}
+
+.logo {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 1000;
+  cursor: pointer;
+}
+
+.footerList {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  list-style-type: none;
+}
+
+.footerListItem {
+  cursor: pointer;
+}
+
+.footerFirstListItem {
+  font-size: 14px;
+  font-weight: 400;
+  color: #757575;
+  cursor: pointer;
+}
